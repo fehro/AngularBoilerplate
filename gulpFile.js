@@ -41,7 +41,7 @@ gulp.task('bundle.app', function() {
 //The default task that executes the other tasks.
 gulp.task('default', ['clean'], function() {
     
-    gulp.watch('./src/css/**/*.scss', ['sass']);
+    gulp.watch('./src/css/*.scss', ['sass']);
     gulp.watch(['./src/js/app/**/*.js', './src/js/src/app.*.js', './src/css/*.css'], ['bundle.app']);
     
     //Run the bundle tasks at start.
